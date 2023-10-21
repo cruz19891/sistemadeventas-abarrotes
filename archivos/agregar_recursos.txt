@@ -1,0 +1,8 @@
+<!-- Jquery CSS -->
+<link rel="stylesheet" href="vistas/assets/plugins/jquery-ui/css/jquery-ui.css">
+
+<!-- jquery UI -->
+<script src="vistas/assets/plugins/jquery-ui/js/jquery-ui.js"></script>
+
+copiar la carpeta
+C:\xampp\htdocs\market-pos\vistas\assets\plugins\jquery-ui
