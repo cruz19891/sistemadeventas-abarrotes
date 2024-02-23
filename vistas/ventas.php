@@ -7,7 +7,7 @@
 
             <div class="col-sm-6">
 
-                <h4 class="m-0">Punto de Venta</h4>
+                <h4 class="m-0 fw-bold">Punto de Venta</h4>
 
             </div><!-- /.col -->
 
@@ -47,28 +47,28 @@
                         <div class="form-group mb-2">
 
                             <label class="col-form-label" for="iptCodigoVenta">
-                                <i class="fas fa-barcode fs-6"></i>
+                            <i class="bi bi-upc-scan fs-6"></i>
                                 <span class="small">Productos</span>
                             </label>
 
-                            <input type="text" class="form-control form-control-sm" id="iptCodigoVenta"
+                            <input style="border-color: black;" type="text" class="form-control form-control-sm" id="iptCodigoVenta"
                                 placeholder="Ingrese el código de barras o el nombre del producto">
                         </div>
 
                     </div>
 
                     <!-- ETIQUETA QUE MUESTRA LA SUMA TOTAL DE LOS PRODUCTOS AGREGADOS AL LISTADO -->
-                    <div class="col-md-7 mb-3 rounded-3" style="background-color: blue;color: white;text-align:center;border:1px solid warning;">
+                    <div class="col-md-7 mb-3 rounded-3" style="background-color: white;color: black;text-align:center;border:1px solid black;">
                         <h2 class="fw-bold m-0">$ <span class="fw-bold" id="totalVenta">0.00</span></h2>
                     </div>
 
                     <!-- BOTONES PARA VACIAR LISTADO Y COMPLETAR LA VENTA -->
                     <div class="col-md-5 text-right">
-                        <button class="btn btn-success" id="btnIniciarVenta">
-                            <i class="fas fa-shopping-cart"></i> Realizar Venta
+                        <button style="border-radius: 15px;" class="btn btn-success" id="btnIniciarVenta">
+                        <i class="bi bi-bag-check-fill"></i> Realizar Venta
                         </button>
-                        <button class="btn btn-danger" id="btnVaciarListado">
-                            <i class="far fa-trash-alt"></i> Vaciar Listado
+                        <button style="border-radius: 15px;" class="btn btn-danger" id="btnVaciarListado">
+                        <i class="bi bi-trash3-fill"></i> Vaciar Listado
                         </button>
                     </div>
 
@@ -76,7 +76,7 @@
                     <div class="col-md-12">
 
                         <table id="lstProductosVenta" class="display nowrap table-striped w-100 shadow ">
-                            <thead class="bg-warning text-left fs-6">
+                            <thead class="bg-info text-left fs-6">
                                 <tr>
                                     <th>Item</th>
                                     <th>Codigo</th>
@@ -115,16 +115,16 @@
                         <div class="form-group mb-2">
 
                             <label class="col-form-label p-0" for="selCategoriaReg">
-                                <i class="fas fa-file-alt fs-6"></i>
+                            <i class="bi bi-file-earmark-medical-fill"></i>
                                 <span class="small">Documento</span><span class="text-danger">*</span>
                             </label>
 
                             <select class="form-select form-select-sm" aria-label=".form-select-sm example"
                                 id="selDocumentoVenta">
                                 <option value="0">Seleccione Documento</option>
-                                <option value="1" selected="true">Boleta</option>
+                                <option value="1">Boleta</option>
                                 <option value="2">Factura</option>
-                                <option value="3">Ticket</option>
+                                <option value="3" selected="true">Ticket</option>
                             </select>
 
                             <span id="validate_categoria" class="text-danger small fst-italic" style="display:none">
@@ -750,11 +750,11 @@
                             'precio_venta_producto': respuesta['precio_venta_producto'],
                             'total' : respuesta['total'],
                             'acciones': "<center>" +
-                                            "<span class='btnIngresarPeso text-success px-1' style='cursor:pointer;' data-bs-toggle='tooltip' data-bs-placement='top' title='Aumentar Stock'> " +
+                                            "<span class='btnIngresarPeso text-success px-1' style='cursor:pointer;' data-bs-toggle='tooltip' data-bs-placement='top' title='Calcular el peso del producto'> " +
                                             "<i class='fas fa-balance-scale fs-5'></i> " +
                                             "</span> " +
                                             "<span class='btnEliminarproducto text-danger px-1'style='cursor:pointer;' data-bs-toggle='tooltip' data-bs-placement='top' title='Eliminar producto'> " +
-                                            "<i class='fas fa-trash fs-5'> </i> " +
+                                            "<i class='bi bi-trash3-fill fs-5'></i> " +
                                             "</span>" +
                                         "</center>",
                             'aplica_peso': respuesta['aplica_peso']
@@ -775,13 +775,13 @@
                             'total' : respuesta['total'],
                             'acciones': "<center>" +
                                             "<span class='btnAumentarCantidad text-success px-1' style='cursor:pointer;' data-bs-toggle='tooltip' data-bs-placement='top' title='Aumentar Stock'> " +
-                                            "<i class='fas fa-cart-plus fs-5'></i> " +
+                                            "<i class='bi bi-bag-plus-fill fs-5'></i> " +
                                             "</span> " +
                                             "<span class='btnDisminuirCantidad text-warning px-1' style='cursor:pointer;' data-bs-toggle='tooltip' data-bs-placement='top' title='Disminuir Stock'> " +
-                                            "<i class='fas fa-cart-arrow-down fs-5'></i> " +
+                                            "<i class='bi bi-bag-dash-fill fs-5'></i> " +
                                             "</span> " +
                                             "<span class='btnEliminarproducto text-danger px-1'style='cursor:pointer;' data-bs-toggle='tooltip' data-bs-placement='top' title='Eliminar producto'> " +
-                                            "<i class='fas fa-trash fs-5'> </i> " +
+                                            "<i class='bi bi-trash3-fill fs-5'></i> " +
                                             "</span>"+
                                         "</center>",
                             'aplica_peso': respuesta['aplica_peso']

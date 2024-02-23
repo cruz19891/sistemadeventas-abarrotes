@@ -127,7 +127,7 @@
 
              <div class="col-12">
 
-                 <div class="card card-warning">
+                 <div class="card card-outline card-secondary">
 
                      <div class="card-header">
 
@@ -168,14 +168,14 @@
 
          <div class="row">
              <div class="col-lg-6">
-                 <div class="card card-warning">
+                 <div class="card card-outline card-secondary">
                      <div class="card-header">
-                         <h3 class="card-title">Los 10 productos mas vendidos</h3>
+                         <h3 class="card-title"><b>Los 10 productos mas vendidos</b></h3>
                          <div class="card-tools">
-                             <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                             <button style="color: gray;" type="button" class="btn btn-tool" data-card-widget="collapse">
                                  <i class="fas fa-minus"></i>
                              </button>
-                             <button type="button" class="btn btn-tool" data-card-widget="remove">
+                             <button style="color: gray;" type="button" class="btn btn-tool" data-card-widget="remove">
                                  <i class="fas fa-times"></i>
                              </button>
                          </div> <!-- ./ end card-tools -->
@@ -184,7 +184,7 @@
                          <div class="table-responsive">
                              <table class="table" id="tbl_productos_mas_vendidos">
                                  <thead>
-                                     <tr class="text-primary">
+                                     <tr style="text-align: center;" class="text-primary">
                                          <th>Cod. producto</th>
                                          <th>Producto</th>
                                          <th>Cantidad</th>
@@ -200,14 +200,14 @@
                  </div>
              </div>
              <div class="col-lg-6">
-                 <div class="card card-warning">
+                 <div class="card card-outline card-secondary">
                      <div class="card-header">
-                         <h3 class="card-title">Listado de productos con poco stock</h3>
+                         <h3 class="card-title"><b>Listado de productos con poco stock</b></h3>
                          <div class="card-tools">
-                             <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                             <button style="color: gray;" type="button" class="btn btn-tool" data-card-widget="collapse">
                                  <i class="fas fa-minus"></i>
                              </button>
-                             <button type="button" class="btn btn-tool" data-card-widget="remove">
+                             <button style="color: gray;" type="button" class="btn btn-tool" data-card-widget="remove">
                                  <i class="fas fa-times"></i>
                              </button>
                          </div> <!-- ./ end card-tools -->
@@ -216,7 +216,7 @@
                      <div class="table-responsive">
                              <table class="table" id="tbl_productos_poco_stock">
                                  <thead>
-                                     <tr class="text-primary">
+                                     <tr style="text-align: center;" class="text-primary">
                                          <th>Cod. producto</th>
                                          <th>Producto</th>
                                          <th>Stock Actual</th>

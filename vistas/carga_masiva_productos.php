@@ -22,7 +22,7 @@
         <!-- FILA PARA INPUT FILE -->
         <div class="row">
             <div class="col-lg-12">
-                <div class="card card-warning">
+                <div class="card card-outline card-success">
                     <div class="card-header">
                         <h3 class="card-title">Seleccionar Archivo de Carga (Excel):</h3>
                         <div class="card-tools">
@@ -39,7 +39,7 @@
                                         accept=".xls, .xlsx">
                                 </div>
                                 <div class="col-lg-2">
-                                    <input type="submit" value="Cargar Productos" class="btn btn-primary"
+                                    <input type="submit" value="Cargar Productos" class="btn btn-success"
                                         id="btnCargar">
                                 </div>
                             </div>

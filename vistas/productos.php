@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Inventario / Productos</h1>
+                <h1 class="m-0 fw-bold">Inventario / Productos</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -26,7 +26,7 @@
 
             <div class="col-lg-12">
 
-                <div class="card card-warning">
+                <div class="card card-outline card-secondary">
                     <div class="card-header">
                         <h3 class="card-title">CRITERIOS DE BÚSQUEDA</h3>
                         <div class="card-tools">
@@ -439,6 +439,10 @@ $(document).ready(function() {
                         $(td).parent().css('background', '#FF5733')
                     }
                 }
+            },
+            {
+                targets: 8,
+                visible: false
             },
             {
                 targets: 11,

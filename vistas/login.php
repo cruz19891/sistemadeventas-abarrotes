@@ -22,17 +22,17 @@
 
 
 
-<body class="hold-transition login-page" style="background-image: url('vistas/assets/imagenes/imagentienda.jpg'); object-fit: cover; object-position: center;">
+<body class="hold-transition login-page" style="background-color:blue; object-fit: cover; object-position: center;">
 
     
 
     <div class="login-box">
 
-        <div class="card card-warning">
+        <div class="card card-outline card-warning">
 
             <div class="card-header text-center text-primary">
 
-                <h1 class="h1"><b>CREMERÍA <br>SAN JUAN</br></b></h1>
+                <h1 class="h1"><b>Cremería <br>San Juan</br></b></h1>
 
             </div><!-- /.card-header -->
 
@@ -89,7 +89,7 @@
 
                         <div class="col-md-12 text-center">
 
-                            <button type="submit" class="btn btn-warning">Iniciar Sesión</button>
+                            <button style="border-radius: 15px;" type="submit" class="btn btn-primary">Ingresar</button>
 
                         </div>
 

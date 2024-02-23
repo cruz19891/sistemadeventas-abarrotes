@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-md-6">
-                <h4 class="m-0">Reportes</h4>
+                <h4 class="m-0 fw-bold">Reportes</h4>
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb float-md-right">
@@ -19,33 +19,33 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="card card-warning">
+                <div class="card card-outline card-secondary">
                     <div class="card-header">
-                        <h3 class="card-title">Criterios de Busqueda</h3>
-                        <div class="card-tools"><button class="btn btn-tool" type="button" data-card-widget="collapse"><i class="fas fa-minus"></i></button></div>
+                        <h3 class="card-title"><b>Criterios de Busqueda</b></h3>
+                        <div class="card-tools"><button style="color: gray;" class="btn btn-tool" type="button" data-card-widget="collapse"><i class="fas fa-minus"></i></button></div>
                     </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label for="">Ventas desde:</label>
+                                    <center><label for="">Ventas desde:</label></center>
                                     <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-calendar-alt"></i></span></div>
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="bi bi-calendar2-week-fill"></i></span></div>
                                         <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" id="ventas_desde">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="form-group">
-                                    <label for="">Ventas hasta:</label>
+                                    <center><label for="">Ventas hasta:</label></center>
                                     <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-calendar-alt"></i></span></div>
+                                        <div class="input-group-prepend"><span class="input-group-text"><i class="bi bi-calendar2-week-fill"></i></span></div>
                                         <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" id="ventas_hasta">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-8 d-flex flex-row align-items-center justify-content-end">
-                                <div class="form-group m-0"><a  class="btn btn-primary" style="width:120px;" id="btnFiltrar">Buscar</a></div>
+                                <div class="form-group m-0"><a  class="btn btn-primary" style="width:120px;" id="btnFiltrar"><i class="bi bi-search"></i> Buscar</a></div>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
             <div class="col-md-12">
                 <table class="display nowrap table-striped w-100 shadow" id="lstVentas">
                     <thead class="bg-secondary">
-                        <tr>
+                        <tr style="text-align: center;">
                             <th>Nro Boleta</th>
                             <th>Codigo Barras</th>
                             <th>Categoria</th>
@@ -154,7 +154,7 @@
 
                         $(rows).eq(i).before(
                             '<tr class="group">'+
-                                '<td colspan="6" class="fs-6 fw-bold fst-italic bg-primary text-white"> ' +
+                                '<td colspan="6" class="fs-6 fw-bold fst-italic bg-success text-white"> ' +
                                     '<i nroBoleta = ' + nroBoleta + ' class="fas fa-trash fs-6 text-danger mx-2 btnEliminarVenta" style="cursor:pointer;"></i> '+
                                         group +  
                                 '</td>'+

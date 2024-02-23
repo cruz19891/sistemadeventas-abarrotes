@@ -7,7 +7,7 @@
 
             <div class="col-sm-6">
 
-                <h2 class="m-0">Administrar Módulos y Perfiles</h2>
+                <h2 class="m-0 fw-bold">Administrar Módulos y Perfiles</h2>
 
             </div><!-- /.col -->
 
@@ -62,7 +62,7 @@
 
                                 <table id="tbl_perfiles_asignar" class="display nowrap table-striped w-100 shadow rounded">
 
-                                    <thead class="bg-warning text-left">
+                                    <thead class="bg-secondary text-left">
                                         <th>id Perfil</th>
                                         <th>Perfil</th>
                                         <th>Estado</th>
