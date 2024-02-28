@@ -205,8 +205,8 @@
                             </div>
 
                             <div class="col-12">
-                                <h6 class="text-start text-success fw-bold">Cambio: $ <span id="Vuelto">0.00</span>
-                                </h6>
+                                <h3 class="text-start text-danger fw-bold">Cambio: $ <span id="Vuelto">0.00</span>
+                                </h3>
                             </div>
 
                         </div>
@@ -227,14 +227,12 @@
                                 $ <span class="" id="boleta_igv">0.00</span>
                             </div>
 
-                            <div class="col-md-7">
-                                <span>TOTAL</span>
-                            </div>
-                            <div class="col-md-5 text-right">
-                                $ <span class="" id="boleta_total">0.00</span>
+                            <div class="col-12">
+                            <h1 class="text-start text-dark fw-bold">Total $ <span id="boleta_total">0.00</span>
+                            </h1>
                             </div>
                         </div>
-
+                        
                     </div><!-- ./ CARD BODY -->
 
                 </div><!-- ./ CARD -->
